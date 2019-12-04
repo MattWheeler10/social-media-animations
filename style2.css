@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,400');
+
+
+body{
+    background-image:url("background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: color-change 5s linear infinite;
+}
+
+.codeNation{
+    margin-top:75px;
+    margin-bottom:100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 30%;
+    transition: .2s;
+
+}
+.facebook{
+    width:75px;
+    height:75px;
+}
+.instagram{
+    width:75px;
+    height:75px;
+    transition: .9s ease-in-out;
+}
+.twitter{
+    width:100px;
+    height:100px;
+    transition-duration: 0.5s;
+    transition: 0.4 ease-in-out;
+}
+
+.socials{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:baseline;
+    animation: pulse 5s;
+    animation-iteration-count: infinite;
+}
+
+.facebook:hover{
+    animation-name:swing;
+    animation: swing 1s ease-in-out;
+    animation-iteration-count: infinite;
+}
+.instagram:hover{
+    transform: rotate(360deg);
+}
+.codeNation:hover{
+    transform:scale(1.25);
+}
+.twitter:hover{
+    background-image: url();
+    transform: rotate(15deg)
+}
+@keyframes color-change
+{
+    0%{
+        filter:hue-rotate(0deg)
+    }
+    50%{
+        filter:hue-rotate(360deg)
+    }
+    55%{
+        filter:hue-rotate(0deg)
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes pulse
+{
+    0%{
+        transition: scale(1);
+    }
+    40%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.05);
+    }
+    60%{
+        transform:scale(1);
+    }
+    100%{
+        transform:scale(1);
+    }
+
+}   
+
+h2.neon-heading {
+    font-family: 'Dosis', Calibri, sans-serif;
+    text-transform: uppercase; 
+    color: #fff;
+    font-family: 'Dosis', Calibri, sans-serif;
+    text-transform: uppercase;
+    font-size: 125px;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 200px;
+}
+h2.neon-heading.first {
+    text-shadow: 0px 0px 10px #9D00FF,
+        0px 0px 20px #9D00FF,
+        0px 0px 30px #9D00FF,
+        0px 0px 40px #9D00FF,
+        0px 0px 50px #9D00FF,
+        0px 0px 60px #9D00FF;
+}
+h2.neon-heading.second {
+    text-shadow: 0px 0px 10px #33FF00,
+        0px 0px 20px #33FF00,
+        0px 0px 30px #33FF00,
+        0px 0px 40px #33FF00,
+        0px 0px 50px #33FF00,
+        0px 0px 60px #33FF00;
+    animation: pulsating 3s infinite;
+}
+
+/* FLICKERING */
+span.flickering-1 {
+    animation: flickering-1 6s infinite;
+}
+span.flickering-2 {
+    animation: flickering-2 3s infinite;
+}
+span.flickering-3 {
+    animation: flickering-3 5s infinite;
+}
+
+/* ANIMATIONS */
+@keyframes pulsating {
+    0% {
+        text-shadow: 0px 0px 0px;
+        opacity: 0;
+    }
+    50% {
+        text-shadow: 0px 0px 10px #33FF00,
+            0px 0px 20px #33FF00,
+            0px 0px 30px #33FF00,
+            0px 0px 40px #33FF00,
+            0px 0px 50px #33FF00,
+            0px 0px 60px #33FF00;
+        opacity: 1;
+    }
+    100% {
+        text-shadow: 0px 0px 0px;
+        opacity: 0;
+    }
+}
+
+@keyframes flickering-1 {
+    0% { opacity: 1; }
+    52% { opacity: 1; }
+    55% { opacity: 0; }
+    56% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+@keyframes flickering-2 {
+    0% { opacity: 1; }
+    62% { opacity: 1; }
+    65% { opacity: 0; }
+    66% { opacity: 1; }
+    69% { opacity: 0; }
+    70% { opacity: 1; }
+    73% { opacity: 0; }
+    74% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+@keyframes flickering-3 {
+    0% { opacity: 1; }
+    82% { opacity: 1; }
+    84% { opacity: 0; }
+    85% { opacity: 1; }
+    87% { opacity: 0; }
+    88% { opacity: 1; }
+    90% { opacity: 0; }
+    91% { opacity: 1; }
+    100% { opacity: 1; }
+}
+

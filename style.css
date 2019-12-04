@@ -1,0 +1,22 @@
+body{
+    background-color: pink;
+}
+.square{
+    padding: 50px 80px;
+    background-color:purple;
+    transition: all 1s;
+    transition-timing-function: ease-in-out;
+    margin-left:850px;
+    color:white;
+    display:inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.square:hover{
+    padding: 40px 90px;
+    -webkit-box-shadow: 11px 18px 20px 8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 18px 20px 8px rgba(0,0,0,0.75);
+    box-shadow: 11px 18px 20px 8px rgba(0,0,0,0.75);
+    background-color: rgba(128, 0, 128, 0.741);
+}
